@@ -18,6 +18,14 @@ mkdir -p $PWD/dist/docker
 ln -snf $PWD/dist/docker ~/.local/share/cockpit/docker
 ```
 
+### Via Old Package
+
+On Ubuntu 20.04 (and likely others), the cockpit-docker package can still be downloaded and used to retain prior functionality:
+```bash
+wget https://launchpad.net/ubuntu/+source/cockpit/215-1~ubuntu19.10.1/+build/18889196/+files/cockpit-docker_215-1~ubuntu19.10.1_all.deb
+sudo dpkg -i cockpit-docker_215-1~ubuntu19.10.1_all.deb
+```
+
 ## License 
 Cockpit is licensed under the GNU Lesser general public license. 
 So im stuck with that. https://github.com/cockpit-project/cockpit/blob/master/COPYING
